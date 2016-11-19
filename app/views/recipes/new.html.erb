@@ -1,0 +1,17 @@
+<h3> Tell us about your recipe: </h3>
+
+<%= form_for @recipe, :url => recipes_path do |f| %>
+
+ <div>
+ <%= f.label :name %>
+ <%= f.text_field :name %>
+ </div>
+
+ <div>
+ <%= f.label :description %>
+ <%= f.text_field :description %>
+ </div>
+
+ <%= f.submit %>
+<% end %>
+

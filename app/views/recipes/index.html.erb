@@ -1,0 +1,18 @@
+<h1> Recipes </h1>
+
+<!-- for each recipe, show recipe image with hyperlinked caption-->
+
+<% @recipes.each do |a| %>
+	<p><%= link_to a.name, recipe_cookingsteps_path(a) %></p>
+	<p><%= a.description %></p>
+	<!-- <picture here> -->
+<% end %>
+
+<%= link_to 'Create new recipe', new_recipe_path %>
+
+
+
+
+
+
+

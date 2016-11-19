@@ -1,0 +1,34 @@
+<h3> Describe the cooking steps: </h3>
+
+<%= form_for @cookingsteps, :url => recipe_cookingsteps_path(@recipe) do |f| %>
+
+ <div>
+ <%= f.text_field :number %>
+ <%= f.text_area :step %>
+ </div>
+
+ <div>
+ <%= f.text_field :number %>
+ <%= f.text_area :step %>
+ </div>
+
+ <div>
+ <%= f.text_field :number %>
+ <%= f.text_area :step %>
+ </div>
+
+ <div>
+ <%= f.text_field :number %>
+ <%= f.text_area :step %>
+ </div>
+
+ <%= f.submit %>
+<% end %>
+
+<!-- 
+Also allow users to add pictures
+Add additional steps as desired 
+Save work-in-progress without submitting
+Change button name
+-->
+
