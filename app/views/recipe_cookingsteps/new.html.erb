@@ -3,24 +3,22 @@
 <%= form_for @cookingsteps, :url => recipe_cookingsteps_path(@recipe) do |f| %>
 
  <div>
- <%= f.text_field :number %>
+ <%= f.label :step %>
  <%= f.text_area :step %>
  </div>
 
+
  <div>
- <%= f.text_field :number %>
+ <%= f.label :step %>
  <%= f.text_area :step %>
  </div>
 
+
  <div>
- <%= f.text_field :number %>
+ <%= f.label :step %>
  <%= f.text_area :step %>
  </div>
 
- <div>
- <%= f.text_field :number %>
- <%= f.text_area :step %>
- </div>
 
  <%= f.submit %>
 <% end %>

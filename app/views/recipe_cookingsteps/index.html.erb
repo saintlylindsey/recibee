@@ -1,6 +1,5 @@
 <h1> Cooking Steps for <%= @recipe.name %> </h1>
 
-<% @cookingsteps.each_with_index do |p, i| %>
-	<%= i + 1 %>
+<% @cookingsteps.each do |p| %>
 	<%= p.step %>
 <% end %>

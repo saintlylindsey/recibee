@@ -11,11 +11,11 @@ class RecipeCookingstepsController < ApplicationController
  	end
 
  	def create
-		@cookingsteps = Cookingstep.new(cookingsteps_params)
+		@cookingsteps = @recipe.cookingsteps.build(cookingsteps_params)
 		@recipe_id = @recipe.id
 		if @cookingsteps.save
 			flash[:notice]="Post was successfully created"
-			redirect_to recipes_path
+			redirect_to recipes_path(@recipe)
 		else 
 			flash[:notice]="Post was not saved. Please retry."
 			render :action => :new
